@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Garry's Grill Contact Us</title>
-  <link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <title>Garry's Grill Contact Us</title>
+    <link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>Garry's Grill</h1><hr />
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact Us</a>  <hr />    <!-- how to space these out? -->
-
+    <div id="title">
+        <h1>Garry's Grill</h1><hr />
+    </div>
+    <div id="navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact Us</a>  <hr />    <!-- how to space these out? -->
+    </div>
     <form action="contactDetails.html" method="post">
-      Name:  <input type="text" name="contactName" /><br />
-      Email:  <input type="text" name="contactEmail" /><br />
-      Phone:  <input type="tel" name="contactPhone" /><br />
-      Reason for Inquiry:  <select name="reason">
-        <option value="catering" selected>Catering</option>
-        <option value="privateParty">Private Party</option>
-        <option value="feedback">Feedback</option>
-        <option value="other">Other</option>
-      </select><br />
-      Additional Information:  <textarea name="details"></textarea><br />
-      Have you been to the restaurant?  <input type="radio" name="visited" value="No" checked /> No
-      <input type="radio" name="visited" value="Yes" /> Yes<br />
-      Best days to contact you:  <input type="checkbox" value="M" /> M
-      <input type="checkbox" value="T" /> T
-      <input type="checkbox" value="W"/> W
-      <input type="checkbox" value="Th" /> Th
-      <input type="checkbox" value="F" /> F <br />
-      <input type="submit" value="Send Request" />
-      <hr />
+        Name:  <input type="text" name="contactName" /><br />
+        Email:  <input type="text" name="contactEmail" /><br />
+        Phone:  <input type="tel" name="contactPhone" /><br />
+        Reason for Inquiry:  <select name="reason">
+            <option value="catering" selected>Catering</option>
+            <option value="privateParty">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+        </select><br />
+        Additional Information:  <textarea name="details"></textarea><br />
+        Have you been to the restaurant?  <input type="radio" name="visited" value="No" checked /> No
+        <input type="radio" name="visited" value="Yes" /> Yes<br />
+        Best days to contact you:  <input type="checkbox" value="M" /> M
+        <input type="checkbox" value="T" /> T
+        <input type="checkbox" value="W"/> W
+        <input type="checkbox" value="Th" /> Th
+        <input type="checkbox" value="F" /> F <br />
+        <input type="submit" value="Send Request" />
+        <hr />
     </form>
 
-    <footer>
-      100 Main St, Gary, IN 46403<br />
-      219-555-1212
-    </footer>
+    <div id="footer">
+        <footer>
+            100 Main St, Gary, IN 46403<br />
+            219-555-1212
+        </footer>
+    </div>
 </body>
 </html>

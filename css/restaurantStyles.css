@@ -1,1 +1,4 @@
 /* Common elements across all pages */
+#title, #footer {
+    text-align: center;
+}
