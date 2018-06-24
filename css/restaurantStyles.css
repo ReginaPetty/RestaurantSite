@@ -7,4 +7,11 @@
     text-align: center;
 }
 #title {
-    font-family: 'Acme', sans-serif;}
+    font-family: 'Acme', sans-serif;
+}
+
+a.nav-space {
+  padding: 0px 10px;
+  word-wrap: normal;
+  display: inline-block;
+}
