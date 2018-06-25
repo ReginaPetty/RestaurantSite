@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Acme');
 
 
-#title, #footer {
+#header, #footer {
     text-align: center;
 }
-#title {
+#header {
     font-family: 'Acme', sans-serif;
 }
 
@@ -14,4 +14,24 @@ a.nav-space {
   padding: 0px 10px;
   word-wrap: normal;
   display: inline-block;
+}
+a {
+    text-decoration: underline;
+    font-weight: normal;
+    color: gray;
+}
+a:link {
+    text-decoration: underline;
+    font-weight: normal;
+    color: gray;
+}
+a:visited {
+    color: silver;
+    text-decoration: underline;
+}
+a:hover {
+    font-weight: bold;
+}
+a:active {
+    text-decoration: none;
 }
