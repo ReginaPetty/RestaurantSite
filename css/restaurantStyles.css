@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Acme');
 
 
-#header, #footer {
+header, footer {
     text-align: center;
 }
-#header {
+header {
     font-family: 'Acme', sans-serif;
 }
 
