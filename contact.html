@@ -4,6 +4,9 @@
     <title>Garry's Grill Contact Us</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <style media="screen">
+        label.required {font-weight: bold;}
+    </style>
 </head>
 <body>
     <header>
@@ -17,44 +20,44 @@
     </nav>
     <hr />
     <form action="contactDetails.html" method="post">
-        <label for="contactName">Name: </label>
+        <label class="required" for="contactName">Name: </label>
         <input type="text" name="contactName" /><br />
-        <label for="contactEmail">Email:  </label>
+        <label class="required" for="contactEmail">Email:  </label>
         <input type="text" name="contactEmail" /><br />
-        <label for="contactPhone">Phone:  </label>
+        <label class="required" for="contactPhone">Phone:  </label>
         <input type="tel" name="contactPhone" /><br />
-        <label for="reason">Reason for Inquiry:  </label>
+        <label class="required" for="reason">Reason for Inquiry:  </label>
         <select name="reason">
             <option value="catering" selected>Catering</option>
             <option value="privateParty">Private Party</option>
             <option value="feedback">Feedback</option>
             <option value="other">Other</option>
         </select><br />
-        <label for="details">Additional Information:  </label>
+        <label class="required" for="details">Additional Information:  </label>
         <textarea name="details"></textarea><br />
-        <label for="visited">Have you been to the restaurant?  </label>
+        <label class="required" for="visited">Have you been to the restaurant?  </label>
         <input type="radio" name="visited" id="choice1 "value="No" checked />
-        <label for="choice1"> No</label>
+        <label class="required" for="choice1"> No</label>
         <input type="radio" name="visited" id="choice2" value="Yes" />
-        <label for="choice2"> Yes</label><br />
-        Best days to contact you:  <!-- how to label this for accessibility? -->
+        <label class="required" for="choice2"> Yes</label><br />
+        <label class="required">Best days to contact you:  </label>
         <input type="checkbox" id="M"value="M" />
-        <label for="M"> M</label>
+        <label class="required" for="M"> M</label>
         <input type="checkbox" id="T"value="T" />
-        <label for="T"> T</label>
+        <label class="required" for="T"> T</label>
         <input type="checkbox" id="W"value="W"/>
-        <label for="W"> W</label>
+        <label class="required" for="W"> W</label>
         <input type="checkbox" id="Th"value="Th" />
-        <label for="Th"> Th</label>
+        <label class="required" for="Th"> Th</label>
         <input type="checkbox" id="F"value="F" />
-        <label for="F"> F</label><br />
+        <label class="required" for="F"> F</label><br />
         <input type="submit" value="Send Request" />
         <hr />
     </form>
 
-        <footer>
-            100 Main St, Gary, IN 46403<br />
-            219-555-1212
-        </footer>
+    <footer>
+        100 Main St, Gary, IN 46403<br />
+        219-555-1212
+    </footer>
 </body>
 </html>
