@@ -5,7 +5,23 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
     <style media="screen">
-        label.required {font-weight: bold;}
+        label.required {
+            font-weight: bold;
+        }
+        label.align {
+            width: 300px;
+            text-align: right;
+            margin-right: 20px;
+        }
+        .align-textarea * {
+            vertical-align: top;
+        }
+        .btn-submit {
+            margin-left: 425px;
+        }
+        .form-entry {
+            width: 217px;
+        }
     </style>
 </head>
 <body>
@@ -20,38 +36,40 @@
     </nav>
     <hr />
     <form action="contactDetails.html" method="post">
-        <label class="required" for="contactName">Name: </label>
-        <input type="text" name="contactName" /><br />
-        <label class="required" for="contactEmail">Email:  </label>
-        <input type="text" name="contactEmail" /><br />
-        <label class="required" for="contactPhone">Phone:  </label>
-        <input type="tel" name="contactPhone" /><br />
-        <label class="required" for="reason">Reason for Inquiry:  </label>
-        <select name="reason">
+        <label class="required align" for="contactName">Name: </label>
+        <input class="form-entry" type="text" name="contactName" /><br />
+        <label class="required align" for="contactEmail">Email:  </label>
+        <input class="form-entry" type="text" name="contactEmail" /><br />
+        <label class="required align" for="contactPhone">Phone:  </label>
+        <input class="form-entry" type="tel" name="contactPhone" /><br />
+        <label class="required align" for="reason">Reason for Inquiry:  </label>
+        <select class="form-entry" name="reason">
             <option value="catering" selected>Catering</option>
             <option value="privateParty">Private Party</option>
             <option value="feedback">Feedback</option>
             <option value="other">Other</option>
         </select><br />
-        <label class="required" for="details">Additional Information:  </label>
-        <textarea name="details"></textarea><br />
-        <label class="required" for="visited">Have you been to the restaurant?  </label>
+        <div class="align-textarea">
+            <label class="required align" for="details">Additional Information:  </label>
+            <textarea class="form-entry" name="details"></textarea><br />
+        </div>
+        <label class="required align" for="visited">Have you been to the restaurant?  </label>
         <input type="radio" name="visited" id="choice1 "value="No" checked />
-        <label class="required" for="choice1"> No</label>
+        <label for="choice1"> No</label>
         <input type="radio" name="visited" id="choice2" value="Yes" />
-        <label class="required" for="choice2"> Yes</label><br />
-        <label class="required">Best days to contact you:  </label>
+        <label for="choice2"> Yes</label><br />
+        <label class="required align">Best days to contact you:  </label>
         <input type="checkbox" id="M"value="M" />
-        <label class="required" for="M"> M</label>
+        <label for="M"> M</label>
         <input type="checkbox" id="T"value="T" />
-        <label class="required" for="T"> T</label>
+        <label for="T"> T</label>
         <input type="checkbox" id="W"value="W"/>
-        <label class="required" for="W"> W</label>
+        <label for="W"> W</label>
         <input type="checkbox" id="Th"value="Th" />
-        <label class="required" for="Th"> Th</label>
+        <label for="Th"> Th</label>
         <input type="checkbox" id="F"value="F" />
-        <label class="required" for="F"> F</label><br />
-        <input type="submit" value="Send Request" />
+        <label for="F"> F</label><br />
+        <input class="btn-submit" type="submit" value="Send Request" />
         <hr />
     </form>
 
