@@ -10,11 +10,11 @@ header {
     font-family: 'Acme', sans-serif;
 }
 
-a.nav-space {
+/* a.nav-space {
   padding: 0px 10px;
   word-wrap: normal;
   display: inline-block;
-}
+} */
 a {
     text-decoration: underline;
     font-weight: normal;
