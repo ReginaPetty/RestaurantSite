@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Garry's Grill Menu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
     <style media="screen">
@@ -27,6 +28,19 @@
         #beverages {
             margin: 40px 0 20px 0;
         }
+        .carousel {
+            background: black;
+            /* margin-top: 20px; */
+        }
+        .carousel-item {
+            color: white;
+            text-align: center;
+        }
+        #menuCarousel {
+            width: 100%;
+            height: auto;
+            padding: 50px;
+        }
     </style>
 </head>
 <body>
@@ -36,11 +50,40 @@
     </header>
     <nav class="container">
         <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home" style="padding:0px 10px;"></i>Home</a></li>
             <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
         </ul>
     </nav> <br>
+
+    <div id="menuCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#menuCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#menuCarousel" data-slide-to="1"></li>
+        <li data-target="#menuCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <p>We're opening a <br>new location!</p>
+        </div>
+        <div class="carousel-item">
+            <p>We're rolling out our seasonal menu, <br>with special options for this season.</p>
+        </div>
+        <div class="carousel-item">
+            <p>The Drink of the Month is <br>SG Special Brew.</p>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#menuCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#menuCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
     <article>
         <h2 style="text-align:center;">Menu</h2>
         <div class="container text-center">
@@ -96,5 +139,10 @@
         100 Main St, Gary, IN 46403<br />
         219-555-1212
     </footer>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
